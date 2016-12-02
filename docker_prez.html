@@ -135,9 +135,9 @@
         </section>
 
         <section data-background="http://www.merford.com/media/203174/ContainerHandling_HeaderImg_Header.jpg">
-          <h2 class="titleonbackground">Lançons un conteneur!</h2>
+          <h2 class="titleonbackground">Lançons des conteneurs!</h2>
           <p class="titleonbackground"><code><span class="fragment">docker</span><span class="fragment"> run</span><span class="fragment"> -it</span><span class="fragment"> ubuntu</span><span class="fragment">:latest</span></code></p>
-      </section>
+        </section>
 
         <section data-background="http://www.merford.com/media/203174/ContainerHandling_HeaderImg_Header.jpg">
           <h2 class="titleonbackground">Jouons un peu avec ce conteneur</h2>
@@ -147,20 +147,35 @@
               <li class="fragment titleonbackground">installer un logiciel... <span class="fragment">une autre fois</span></li>
               <li class="fragment titleonbackground">tout casser!</li>
             </ul>
-      </section>
-
+        </section>
 
         <section data-background="http://www.gatewaycontainersales.com.au/wp-content/uploads/2015/11/Broken-Container.jpg">
           <h2 class="titleonbackground">Nettoyons tous ça</h2>
-          <p class="titleonbackground"><code><span class="fragment">docker</span><span class="fragment"> run</span><span class="fragment"> -it</span><span class="fragment"> ubuntu</span><span class="fragment">:latest</span></code></p>
-            <ul>
-              <li class="fragment titleonbackground">ajouter des fichiers</li>
-              <li class="fragment titleonbackground">supprimer des fichiers</li>
-              <li class="fragment titleonbackground"><span class="code">installer un logiciel...</span> <span class="fragment">une autre fois</span></li>
-              <li class="fragment titleonbackground">tout casser!</li>
-            </ul>
+          <p class="fragment titleonbackground">docker ps</p>
+          <p class="fragment titleonbackground">docker stop e4g</p>
+          <p class="fragment titleonbackground">docker rm e4g</p>
+          <p class="fragment titleonbackground">docker ps -a</p>
+          <p class="fragment titleonbackground">docker images</p>
+          <p class="fragment titleonbackground">docker rmi 77g</p>
       </section>
 
+        <section data-background="http://www.gatewaycontainersales.com.au/wp-content/uploads/2015/11/Broken-Container.jpg">
+          <h2 class="titleonbackground">Ok c'est vraiment trop lent!</h2>
+          <p>
+            <ul>
+              <li class="fragment titleonbackground">docker run -rm -it ubuntu</li>
+              <li class="fragment titleonbackground">ui-for-docker</li>
+            </ul>
+          </p>
+      </section>
+
+      <section data-background="http://www.gatewaycontainersales.com.au/wp-content/uploads/2015/11/Broken-Container.jpg">
+        <h2 class="titleonbackground">Relier les conteneurs</h2>
+        <h3 class="titleonbackground">Méthode classique</h3>
+        <p class="fragment"><code>docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag</code></p>
+        <p class="fragment"><code>docker run --name some-wordpress --link some-mysql:mysql -p 8080:80 -d wordpress</code></p>
+        <h3 class="titleonbackground">Méthode classique</h3>
+      </section>
 
 
 
