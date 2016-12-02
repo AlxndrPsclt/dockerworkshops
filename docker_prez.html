@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/white.css" id="theme">
+    <link rel="stylesheet" href="css/theme/solperso.css" id="theme">
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -56,50 +56,131 @@
               <li>Faciliter l'installation de logiciels</li>
               <li>Isoler l'environnement d'execution des applications</li>
               <li>Reproduire un environnement d'execution sur une machine différente</li>
+              <li>Créer des machines virtuelles légères?</li>
               <li>...</li>
             </ul>
           </p>
         </section>
 
-        <section>
-          <h2>Mais à quoi ça sert?</h2>
+        <section data-background="http://www.modcansolutions.ca/wp-content/uploads/2012/12/Container-Yard.jpg">
+          <h2 class="titleonbackground">Une brique de construction standard</h2>
+        </section>
+
+        <section data-background="http://www.modcansolutions.ca/wp-content/uploads/2012/12/Container-Yard.jpg">
+          <h2 class="titleonbackground">Pour les devs</h2>
           <p>
             <ul>
-              <li>Automatiser le déploiement d'applications linux à l'intérieur de conteneurs</li>
-              <li>Faciliter l'installation de logiciels</li>
-              <li>Isoler l'environnement d'execution des applications</li>
-              <li>Reproduire un environnement d'execution sur une machine différente</li>
-              <li>...</li>
+              <li class="fragment titleonbackground">Installer facilement</li>
+              <li class="fragment titleonbackground">Lancer des services facilement</li>
+              <li class="fragment titleonbackground">Avoir un environnement propre facilement</li>
+              <li class="fragment titleonbackground">Expérimenter avec de nouveau logiciels facilement</li>
             </ul>
           </p>
         </section>
 
-        <section data-background="https://www.brianchristner.io/content/images/2015/09/scaled-containers.jpg">
-          <h2>Une brique de construction standard</h2>
-        </section>
-
-        <section data-background="https://www.brianchristner.io/content/images/2015/09/scaled-containers.jpg">
-          <h2>Pour les devs</h2>
+        <section data-background="http://www.modcansolutions.ca/wp-content/uploads/2012/12/Container-Yard.jpg">
+          <h2 class="titleonbackground">Pour les ops</h2>
           <p>
             <ul>
-              <li class="fragment">Installer facilement</li>
-              <li class="fragment">Lancer des services facilement</li>
-              <li class="fragment">Avoir un environnement propre facilement</li>
-              <li class="fragment">Expérimenter avec de nouveau logiciels facilement</li>
+              <li class="fragment titleonbackground">Reçevoir un système fonctionnel</li>
+              <li class="fragment titleonbackground">Lister explicitement les versions</li>
+              <li class="fragment titleonbackground">Lancer et arréter des services facilement</li>
             </ul>
           </p>
         </section>
 
-        <section data-background="https://www.brianchristner.io/content/images/2015/09/scaled-containers.jpg">
-          <h2>Une brique de construction standard</h2>
+        <section data-background="http://www.modcansolutions.ca/wp-content/uploads/2012/12/Container-Yard.jpg">
+          <h2 class="titleonbackground">Comment?</h2>
           <p>
             <ul>
-              <li class="fragment">Devs</li>
-              <li class="fragment">Ops</li>
-              <li class="fragment"></li>
+              <li class="fragment titleonbackground">Créer un environnement shell totalement isolé</li>
+              <li class="fragment titleonbackground">Construire ou télécharger une image docker</li>
+              <li class="fragment titleonbackground">Instancier un conteneur à partir de l'image</li>
+              <li class="fragment titleonbackground">Faire ce qu'on a faire</li>
             </ul>
           </p>
         </section>
+
+        <section data-background="http://99percentinvisible.org/app/uploads/2015/09/Multicolored-containers-3144199355.jpg">
+          <h2 class="titleonbackground">Fonctionnement</h2>
+          <img data-src="http://images.techhive.com/images/article/2016/05/virtualization-vs-containers-100663417-large.idge.png"alt="Docker schema">
+        </section>
+
+        <section data-background="http://99percentinvisible.org/app/uploads/2015/09/Multicolored-containers-3144199355.jpg">
+          <h2 class="titleonbackground">Un peu de vocabulaire</h2>
+          <img class="fragment" data-src="img/pasunconteneur.png"alt="Docker schema">
+            <ul>
+              <li class="fragment titleonbackground">Images</li>
+              <li class="fragment titleonbackground">Conteneurs</li>
+            </ul>
+        </section>
+
+        <section data-background="http://99percentinvisible.org/app/uploads/2015/09/Multicolored-containers-3144199355.jpg">
+          <h2 class="titleonbackground">Quelques commandes</h2>
+            <ul>
+              <li class="fragment titleonbackground"><code>docker images</code></li>
+              <li class="fragment titleonbackground"><code>docker ps</code></li>
+              <li class="fragment titleonbackground"><code>docker ps -a</code></li>
+            </ul>
+        </section>
+
+        <section data-background="http://www.merford.com/media/203174/ContainerHandling_HeaderImg_Header.jpg">
+          <h2 class="titleonbackground">Où obtenir des conteneurs?</h2>
+            <ul>
+              <li class="fragment titleonbackground">https://hub.docker.com/</li>
+              <li class="fragment titleonbackground">https://store.docker.com/</li>
+              <li class="fragment titleonbackground">Depôt d'images privé</li>
+              <li class="fragment titleonbackground">Dockerfile</li>
+            </ul>
+        </section>
+
+        <section data-background="http://www.merford.com/media/203174/ContainerHandling_HeaderImg_Header.jpg">
+          <h2 class="titleonbackground">Où obtenir des conteneurs?</h2>
+            <ul>
+              <li class="fragment titleonbackground">https://hub.docker.com/</li>
+              <li class="fragment titleonbackground">https://store.docker.com/</li>
+              <li class="fragment titleonbackground">Depôt d'images privé</li>
+              <li class="fragment titleonbackground">Dockerfile</li>
+            </ul>
+        </section>
+
+
+
+
+
+
+        <section data-background="http://www.documentingreality.com/forum/attachments/f10/19729d1216875650-man-crushed-under-container-con02.jpg">
+          <h2 class="titleonbackground">Dangers des conteneurs</h2>
+          <p>
+            <ul>
+              <li class="fragment titleonbackground">Les conteneurs doivent être supprimés à la main!!!</li>
+              <li class="fragment titleonbackground">Comprendre le comportement des conteneurs vis à vis du reseau (problèmes DNS?)</li>
+              <li class="fragment titleonbackground">Image linux *très* minimaliste!!</li>
+              <li class="fragment titleonbackground">Run everywhere... mais quand même</li>
+              <li class="fragment titleonbackground">... parfois des problèmes ...</li>
+            </ul>
+          </p>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <section>
           <section>
